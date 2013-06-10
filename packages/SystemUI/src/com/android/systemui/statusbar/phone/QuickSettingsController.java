@@ -17,6 +17,7 @@
 package com.android.systemui.statusbar.phone;
 
 import static com.android.internal.util.cm.QSConstants.TILES_DEFAULT;
+import static com.android.internal.util.cm.QSConstants.TILE_ALBUMART;
 import static com.android.internal.util.cm.QSConstants.TILE_AIRPLANE;
 import static com.android.internal.util.cm.QSConstants.TILE_AUTOROTATE;
 import static com.android.internal.util.cm.QSConstants.TILE_BATTERY;
@@ -66,6 +67,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 
 import com.android.systemui.statusbar.BaseStatusBar;
+import com.android.systemui.quicksettings.AlbumArtTile;
 import com.android.systemui.quicksettings.AirplaneModeTile;
 import com.android.systemui.quicksettings.AlarmTile;
 import com.android.systemui.quicksettings.AutoRotateTile;
@@ -230,6 +232,8 @@ public class QuickSettingsController {
                 qs = new TogglePibTile(mContext, inflater, mContainerView, this, mHandler);
             } else if (tile.equals(TILE_MUSIC)) {
                 qs = new MusicTile(mContext, inflater, mContainerView, this, mHandler);
+            } else if (tile.equals(TILE_ALBUMART)) {
+                qs = new AlbumArtTile(mContext, inflater, mContainerView, this, mHandler);
             } else if (tile.equals(TILE_VOLUME)) {
                 qs = new VolumeTile(mContext, inflater, mContainerView, this, mHandler);
             } else if (tile.equals(TILE_LTE)) {

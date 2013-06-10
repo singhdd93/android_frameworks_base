@@ -592,5 +592,7 @@
         processes and <xliff:g id="numservices">%2$d</xliff:g> services</string>
     <!-- [CHAR LIMIT=NONE] Label of a running process that represents another user -->
     <string name="running_process_item_user_label">User: <xliff:g id="user_name">%1$s</xliff:g></string>
+    <!-- Strings for AlbumArtTile -->
+    <string name="status_bar_settings_mediaplayer">Media Player</string>
 
 </resources>

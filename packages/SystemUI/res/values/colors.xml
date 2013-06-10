@@ -44,4 +44,5 @@
     <drawable name="notification_shortcut_background_color">#00000000</drawable>
     <drawable name="notification_item_background_color">#ff111111</drawable>
     <drawable name="notification_item_background_color_pressed">#ff257390</drawable>
+    <color name="qs_user_banner_background">#CC000000</color>
 </resources>
